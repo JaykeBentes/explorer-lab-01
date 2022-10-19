@@ -8,7 +8,7 @@ const ccLogo = document.querySelector(".cc-logo span:nth-child(2) img")
 function setCardType(type) {
     const colors = {
         "visa": ["#236D99", "#2D57F2"],
-        "mastercard": ["#DF6F29", "#C69347"],
+        "mastercard": ["#DF6F29", "#C64747"],
         "default": ["black", "gray"],
         "elo": ["#FFCB05", "#FFE927"],
         "american-express": ["#27FF8A", "#A5F54D"]
@@ -19,4 +19,4 @@ function setCardType(type) {
     ccLogo.setAttribute("src", `cc-${type}.svg`)
 }
 
-globalThis.setCardType = setCardType
+setCardType(visa)
